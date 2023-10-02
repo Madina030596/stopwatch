@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+    background: #f3f4f4;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.btn {
+    margin: 1.25rem;
+    width: 35%;
+    padding: 1.25rem;
+    font-size: 3.1rem;
+    box-shadow: 1px 3px 8px 2px #395B64;
+    background: white;
+    border-radius: 1.8rem;
+    border: 1px solid #2C3333;
+    color: #2C3333;
+}
+
+.container__inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 400px;
+    background: #829fa0;
+    padding: 1.25rem;
+    border-radius: 3.1rem;
+    box-shadow: 1px 2px 5px #395B64;
+}
+
+input {
+    height: 3.75rem;
+    padding: 0.6rem;
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 1.8rem;
+    border: 1px solid #2C3333;
+    box-shadow: 1px 3px 8px 2px #395B64;
+    margin-top: 3.1rem;
+    outline: none;
+}
+
+.container__text {
+    font-size: 3.7rem;
+    background: white;
+    padding: 1.25rem;
+    border-radius: 1.8rem;
+    border: 1px solid #2C3333;
+    box-shadow: 1px 3px 8px 2px #395B64;
+    color: #2C3333;
+}
+
+.container__text_space_timer {
+    margin: 3.1rem 0rem;
+}
+
+.container__text_space_stopwatch {
+    margin: 1.8rem;
+}
+
+.button {
+    font-size: 3.1rem;
+    border: none;
+    background: none;
+    color: #2C3333;
+}
+
+.button_space_timer {
+    margin: 0rem 1.8rem 1.8rem 1.8rem;
+}
+
+.button_space_stopwatch {
+    margin: 1.8rem;
+}
+
+@media all and (max-width: 800px) {
+    .btn {
+        width: 70%;
+        font-size: 1.8rem;
+    }
+
+    .container__inner{
+        width: 320px;
+        height: 320px;
+    }
+
+    input {
+        height: 3.1rem;
+        width: 240px;
+        font-size: 1.3rem;
+    }
+
+    .container__text {
+        font-size: 2.5rem;
+    }
+
+    .container__text_space_timer {
+        margin: 1.25rem 0rem;
+        padding: 1.5rem;
+    }
+
+    .button {
+        font-size: 2.5rem;
+    }
+
+    .button_space_stopwatch {
+        margin: 1.25rem;
+    }
+}
+
+@media all and (max-width: 320px) {
+    .container__inner{
+        width: 280px;
+        height: 280px;
+    }
+
+    input {
+        width: 200px;
+        font-size: 1.25rem;
+    }
+
+    .container__text {
+        font-size: 1.8rem;
+    }
+}
+
+@media all and (max-width: 916px) and (orientation: landscape) {
+    .btn {
+        width: 40%;
+        font-size: 1.8rem;
+    }
+
+    .container__inner{
+        width: 50%;
+        height: 90%;
+    }
+
+    input {
+        margin-top: 1.8rem;
+    }
+
+    .container__text {
+        font-size: 2.5rem;
+    }
+
+    .container__text_space_timer {
+        margin: 1.25rem 0rem;
+        padding: 1.25rem;
+    }
+}
